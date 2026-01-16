@@ -47,5 +47,6 @@ for i in range(0,len(df['Sales per Month'])):
 
 print(f"Maximum sales of {max_sales} in {month}")
 
-plt.pie(df['Sales per Month'],labels=df['Month'])
+plt.pie(df['Sales per Month'],labels=df['Month'],autopct='%1.1f%%')
+plt.title("Percentage Sales per Month")
 plt.show()
